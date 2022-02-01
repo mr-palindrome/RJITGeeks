@@ -1,0 +1,640 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    padding: 0;
+    margin: 0;
+}
+
+.geeksclub {
+    height: 100vh;
+    background: url('images/section-1-img.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    opacity: 0.7;
+}
+
+.cover {
+    background: rgb(0 4 118 / 75%);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-family: 'Raleway', sans-serif
+}
+
+.cover h1 {
+    font-weight: bold;
+    font-size: 7rem;
+    letter-spacing: 5px;
+}
+
+.cover p {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+}
+
+.navbar-brand img {
+    width: 100px;
+}
+
+.navbar-nav a {
+    color: #311291;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+}
+
+
+/* section one css */
+
+.section-1 {
+    background-color: #b5b5b545;
+}
+
+.row-2 {
+    width: 100%;
+    margin: 0px;
+}
+
+.about-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-img img {
+    width: 70%;
+}
+
+.about-content {
+    color: #0d0d62;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-content h2 {
+    padding-top: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 3rem;
+}
+
+.about-content p {
+    font-size: 1.3rem;
+    text-align: justify;
+    padding: 20px 30px;
+}
+
+
+/* section-2 css */
+
+.team-bg {
+    background-color: #504aa7fa;
+    padding-bottom: 20px;
+}
+
+.teamintro h1 {
+    padding: 50px 0px;
+    font-size: 4rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.img-1 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.img-1 img {
+    width: 70%;
+}
+
+.img-1-text h2 {
+    font-size: 1.5rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding-top: 20px;
+}
+
+.img-1-text p {
+    font-size: 1.5rem;
+    font-family: 'Cormorant Garamond', serif;
+    padding: 10px 0px;
+    text-align: justify;
+}
+
+.row-4 {
+    margin: 30px 0px;
+}
+
+.seniorbg {
+    background-color: #e7e7e7;
+}
+
+.seniormember {
+    padding: 20px 0px;
+}
+
+.seniormember h1 {
+    padding-top: 50px;
+    font-size: 3rem;
+    font-family: 'Ubuntu', sans-serif;
+    color: #252574;
+}
+
+.row-6 {
+    /* border: red solid 2px; */
+    margin: 20px 0px;
+}
+
+.row-7 {
+    margin: 0px;
+}
+
+.row-8 {
+    margin: 30px 0px;
+}
+
+.row-9 {
+    margin: 0px;
+}
+
+.img-2,
+.img-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-2 h2 {
+    font-size: 1.3rem;
+    padding: 20px 0px;
+    color: #372f81;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+.img-2 img {
+    width: 60%;
+}
+
+.img-3 h2 {
+    font-size: 1.3rem;
+    padding: 20px 0px;
+    color: #372f81;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+.img-3 img {
+    width: 40%;
+}
+
+
+/* event section css */
+
+.eventbg {
+    background: url('images/event\ img.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.8;
+    padding: 0px 0px;
+}
+
+.eventcover {
+    background: rgb(0 4 118 / 81%);
+    ;
+}
+
+.eventdetail {
+    padding: 0px;
+}
+
+.eventdetail h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    padding-top: 40px;
+    font-size: 3.5rem;
+    letter-spacing: 3px;
+}
+
+.eventdetail h3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 3rem;
+    padding: 20px 0px;
+}
+
+.eventdetail p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.row-11 {
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 40px;
+}
+
+.when {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+}
+
+.when h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    padding: 5px 0px;
+}
+
+.when p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.6rem;
+    text-align: center;
+    margin: 0px;
+}
+
+.vertical-line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0px;
+}
+
+.vertical-line-content {
+    height: 100%;
+    width: 3px;
+    border-left: white solid 2px;
+}
+
+
+/* alumnus section css */
+
+.alumnifluid {
+    background-image: linear-gradient(to right, #11135e, #2600b9f7);
+}
+
+.alumni-container h1 {
+    padding: 50px 0px;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    font-size: 3rem;
+}
+
+.row-12 {
+    padding-bottom: 50px;
+}
+
+.alumni-pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.alumni-pic img {
+    width: 70%;
+}
+
+.alumni-pic h2 {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+.icon li {
+    list-style: none;
+}
+
+.icon i {
+    padding: 4px;
+    border: white solid 2px;
+    border-radius: 20px;
+    color: white;
+    font-size: 0.8rem;
+}
+
+.midicon {
+    margin: 10px;
+}
+
+
+/* footer css  */
+
+footer {
+    background-color: #161616;
+}
+
+.row-13 {
+    padding: 80px 0px;
+}
+
+.footercol {
+    margin: 0px;
+    padding: 0px;
+}
+
+footer h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    font-size: 1.8rem;
+}
+
+.footericons {
+    padding: 0px;
+    padding-left: 10px;
+    display: flex;
+}
+
+.footericons i {
+    color: white;
+    margin: 0px 5px;
+}
+
+.footericons li {
+    list-style: none;
+}
+
+.lastdiv {
+    background-color: #201f1f;
+}
+
+.contributors {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+    padding: 15px 0px;
+}
+
+.color {
+    color: #b7b7b7;
+}
+
+.contributors p {
+    padding: 0px;
+    margin: 0px;
+    padding: 0px 5px;
+    font-size: 1.3rem;
+}
+
+@media screen and (max-width:1200px) {
+    .about-img img {
+        width: 90%;
+    }
+    .about-content p {
+        font-size: 1.2rem;
+        padding: 20px 30px;
+    }
+    .img-1 img {
+        width: 90%;
+    }
+    .img-1-text p {
+        font-size: 1.3rem;
+        padding: 10px 0px;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .about-content p {
+        font-size: 1rem;
+        padding: 5px 10px;
+    }
+    .about-content h2 {
+        padding-top: 20px;
+    }
+    .img-1 img {
+        width: 100%;
+    }
+    .img-1-text p {
+        font-size: 1.05rem;
+        padding: 10px 0px;
+    }
+    .img-1-text h2 {
+        font-size: 1.2rem;
+        letter-spacing: 2px;
+        padding-top: 0px;
+    }
+    .row-4 {
+        margin: 50px 0px;
+    }
+    .img-2 h2 {
+        font-size: 1rem;
+        padding: 20px 0px;
+        color: #372f81;
+        font-family: 'Raleway', sans-serif;
+        font-weight: bold;
+        letter-spacing: 1.5px;
+    }
+    .img-3 h2 {
+        font-size: 1rem;
+        padding: 20px 0px;
+        color: #372f81;
+        font-family: 'Raleway', sans-serif;
+        font-weight: bold;
+        letter-spacing: 1.5px;
+    }
+    .eventdetail p {
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 1.6rem;
+        text-align: justify;
+    }
+    .when p {
+        font-size: 1.4rem;
+    }
+    .mdclass {
+        margin-top: 30px;
+    }
+    .alumni-pic img {
+        width: 60%;
+    }
+    .alumni-pic h2 {
+        font-size: 1.6rem;
+    }
+    .footercol {
+        padding-right: 10px;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .cover h1 {
+        font-size: 5rem;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .cover h1 {
+        letter-spacing: 0px;
+    }
+    .cover p {
+        font-size: 1rem;
+        letter-spacing: 1px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .about-img img {
+        width: 60%;
+    }
+    .about-content h2 {
+        padding-top: 50px;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 3rem;
+    }
+    .about-content p {
+        font-size: 1.2rem;
+        text-align: justify;
+        padding: 20px 30px;
+    }
+    .img-1 img {
+        width: 60%;
+    }
+    .img-1 {
+        justify-content: center;
+    }
+    .img-1-text p {
+        font-size: 1.4rem;
+        padding: 10px 10px;
+    }
+    .img-1-text {
+        margin-top: 10px;
+    }
+    .img-1-text h2 {
+        font-size: 2rem;
+        letter-spacing: 2px;
+        padding-top: 0px;
+        text-align: center;
+    }
+    .row-4 {
+        margin: 50px 0px;
+    }
+    .seniormember h1 {
+        font-size: 2.5rem;
+    }
+    .img-2 img {
+        width: 60%;
+    }
+    .img-3 img {
+        width: 60%;
+    }
+    .eventdetail p {
+        font-size: 1.5rem;
+    }
+    .when p {
+        font-size: 1.3rem;
+    }
+    .footercol {
+        margin: 10px 0px;
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+        justify-content: center;
+        align-items: center;
+    }
+    .contributors p {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .about-img img {
+        width: 100%;
+    }
+    .seniormember h1 {
+        padding-top: 50px;
+        font-size: 1.8rem;
+    }
+    .img-2 img {
+        width: 40%;
+    }
+    .img-3 img {
+        width: 40%;
+    }
+    .eventdetail h2 {
+        font-size: 3rem;
+    }
+    .eventdetail h3 {
+        font-size: 2.5rem;
+    }
+    .eventdetail p {
+        font-size: 1.4rem;
+        padding: 0px 20px;
+    }
+    .when p {
+        padding: 0px 50px;
+        font-size: 1.2rem;
+    }
+    .vertical-line {
+        margin: 20px 0px;
+        height: 2px;
+    }
+    .vertical-line-content {
+        padding: 0px 0px;
+        width: 40%;
+        border-top: white solid 2px;
+    }
+    .alumni-pic {
+        padding-top: 20px;
+    }
+    .alumni-pic img {
+        width: 40%;
+    }
+    .mdclass {
+        margin: 0px;
+    }
+    .icon i {
+        font-size: 0.7rem;
+    }
+    .institute {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .cover h1 {
+        font-size: 4rem;
+        letter-spacing: 0px;
+    }
+    .cover p {
+        font-size: 1rem;
+        letter-spacing: 1px;
+    }
+}
+
+@media screen and (max-width:350px) {
+    .about-content h2 {
+        font-size: 2.5rem;
+    }
+    .about-content p {
+        font-size: 1rem;
+        padding: 20px 30px;
+    }
+}

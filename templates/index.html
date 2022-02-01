@@ -1,10 +1,321 @@
-<!DOCTYPE html>
+{% load static %}
+
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>RJIT-Geeks</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    <title>Dummy Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Raleway:wght@300;400&family=Roboto+Condensed:wght@300&family=Source+Sans+Pro:wght@300&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Oswald:wght@200&family=Raleway:wght@300;400&family=Roboto+Condensed:wght@300&family=Source+Sans+Pro:wght@300&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Waterfall&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/aa05dadff6.js" crossorigin="anonymous"></script>
+    <style></style>
 </head>
+
 <body>
-    <h1>HELLO WORLD!!</h1>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <nav class="navbar navbar-expand-lg  bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="images/geeks-png.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list text-#311291" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+              </svg></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link" href="#Geeksdetail">About-Geeks</a>
+                    <a class="nav-link" href="#Teamdetail">Our Team</a>
+                    <a class="nav-link" href="#Eventid">Events</a>
+                    <a class="nav-link" href="#Alumniid">Alumni</a>
+                    <a class="nav-link" href="#Footerid">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid geeksclub">
+        <div class="row row-1 cover">
+            <div class="col-md-12 heading text-center">
+                <h1>RJIT-GEEKS CLUB</h1>
+                <p>Rustamji Institute Of Technology BSF Academy, Takenpur </p>
+            </div>
+        </div>
+    </div>
+    <section class="section-1">
+        <div class="row row-2">
+            <div class="col-md-6 about-img">
+
+                <img src="images/section-2-img.png" alt="">
+
+            </div>
+            <div class="col-md-6 about-content" id="Geeksdetail">
+                <h2 class="text-center">About-Geeks</h2>
+
+
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla quo accusamus deserunt repellat architecto perspiciatis quas laborum voluptatum hic cupiditate fuga eaque aperiam voluptatem fugit, laboriosam, explicabo vero laudantium.
+                    Quas.
+                </p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla quo accusamus deserunt repellat architecto perspiciatis quas laborum voluptatum hic cupiditate fuga eaque aperiam voluptatem fugit, laboriosam, explicabo vero laudantium.
+                    Quas.
+                </p>
+
+
+            </div>
+        </div>
+    </section>
+    <section class="section-2">
+        <div class="container-fluid team-bg">
+            <div class="container teamintro" id="Teamdetail">
+                <h1 class="text-center text-white">Our Team</h1>
+                <div class="row row-3">
+                    <div class="col-md-4 img-1">
+                        <img src="images/rishab- sir.png" alt="">
+                    </div>
+                    <div class="col-md-8 img-1-text text-white">
+                        <h2>Rishab Jain</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero quaerat perferendis explicabo, incidunt voluptatem accusamus et perspiciatis debitis nobis quis asperiores! Quod sint debitis nisi inventore totam harum, unde mollitia!</p>
+                        <h2>President</h2>
+                    </div>
+                </div>
+                <div class="row row-4">
+                    <div class="col-md-4 img-1">
+                        <img src="images/gaurav- sir.png" alt="">
+                    </div>
+                    <div class="col-md-8 img-1-text text-white">
+                        <h2>Jagdish Makhijani</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero quaerat perferendis explicabo, incidunt voluptatem accusamus et perspiciatis debitis nobis quis asperiores! Quod sint debitis nisi inventore totam harum, unde mollitia!</p>
+                        <h2>Faculty Member</h2>
+                    </div>
+                </div>
+                <div class="row row-5">
+                    <div class="col-md-4 img-1">
+                        <img src="images/gaurav- sir.png" alt="">
+                    </div>
+                    <div class="col-md-8 img-1-text text-white">
+                        <h2>Gaurav Singh Bhagel</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero quaerat perferendis explicabo, incidunt voluptatem accusamus et perspiciatis debitis nobis quis asperiores! Quod sint debitis nisi inventore totam harum, unde mollitia!</p>
+                        <h2>Vice President</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-3">
+        <div class="container-fluid seniorbg">
+            <div class="container seniormember">
+                <h1 class="text-center">Senior Executive Member</h1>
+                <div class="row row-6">
+                    <div class="col-md-3 col-sm-6 img-2">
+                        <img src="images/gaurav-sir-1.png" alt="">
+                        <h2>Varad Khokle</h2>
+                    </div>
+                    <div class="col-md-3  col-sm-6 img-2">
+                        <img src="images/rishab sir-1.png" alt="">
+                        <h2>Shubham Devrani</h2>
+                    </div>
+                    <div class="col-md-3 col-sm-6  img-2">
+                        <img src="images/gaurav-sir-1.png" alt="">
+                        <h2>Vishal Sir</h2>
+                    </div>
+                    <div class="col-md-3 col-sm-6 img-2">
+                        <img src="images/rishab sir-1.png" alt="">
+                        <h2>Chirag Sir</h2>
+                    </div>
+                </div>
+                <div class="row row-7">
+                    <div class="col-md-3 col-sm-6 img-2">
+                        <img src="images/gaurav-sir-1.png" alt="">
+                        <h2>Stuti Mam</h2>
+                    </div>
+                    <div class="col-md-3 col-sm-6 img-2">
+                        <img src="images/rishab sir-1.png" alt="">
+                        <h2>Ayushman pathak</h2>
+                    </div>
+                    <div class="col-md-3 col-sm-6 img-2">
+                        <img src="images/gaurav-sir-1.png" alt="">
+                        <h2>Himanshu Sir</h2>
+                    </div>
+                    <div class="col-md-3 col-sm-6 img-2">
+                        <img src="images/rishab sir-1.png" alt="">
+                        <h2>Vanshika Mam</h2>
+                    </div>
+                </div>
+                <h1 class="text-center">Junior Executive Member</h1>
+                <div class="row row-8">
+                    <div class="col-sm-4  img-3">
+                        <img src="images/gaurav-sir-1.png" alt="">
+                        <h2>Adarsh</h2>
+                    </div>
+                    <div class="col-sm-4  img-3">
+                        <img src="images/rishab sir-1.png" alt="">
+                        <h2>Alok Dwivedi</h2>
+                    </div>
+                    <div class="col-sm-4  img-3">
+                        <img src="images/gaurav-sir-1.png" alt="">
+                        <h2>Naya Das</h2>
+                    </div>
+
+                </div>
+                <div class="row row-9">
+                    <div class="col-sm-4 img-3">
+                        <img src="images/gaurav-sir-1.png" alt="">
+                        <h2>Nupur Sapra</h2>
+                    </div>
+                    <div class="col-sm-4   img-3">
+                        <img src="images/rishab sir-1.png" alt="">
+                        <h2>Shobhit Rawat</h2>
+                    </div>
+                    <div class="col-sm-4  img-3">
+                        <img src="images/gaurav-sir-1.png" alt="">
+                        <h2>Sapna Jha</h2>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-4">
+        <div class="container-fluid eventbg text-white">
+            <div class="eventcover">
+                <div class="container eventcon" id="Eventid">
+                    <div class="row row-10">
+                        <div class="col-md-12 eventdetail">
+                            <h2 class="text-center">Events</h2>
+                            <h3 class="text-center">About The Events</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis voluptate corporis iure consectetur quis. Delectus, consequuntur. Distinctio accusantium dignissimos blanditiis nihil, reprehenderit sapiente necessitatibus
+                                perferendis vel error quod mollitia asperiores?</p>
+
+                        </div>
+                        <div class="row-11 row">
+                            <div class="col-sm-5 when">
+                                <h2 class="text-center">When</h2>
+                                <p> From monday to wednesday 10-12 December</p>
+
+                            </div>
+                            <div class="col-sm-2 vertical-line">
+                                <div class="vertical-line-content"></div>
+                            </div>
+                            <div class="col-sm-5 when">
+                                <h2 class="text-center">Where</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.onsectetur </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="section-5">
+        <div class="container-fluid alumnifluid">
+            <div class="container alumni-container" id="Alumniid">
+                <h1 class="text-center">Meet Our Alumnus</h1>
+                <div class="row row-12">
+                    <div class="col-lg-3 col-sm-6  alumni-pic">
+                        <img src="images/gaurav-sir-1.png" alt="">
+                        <h2>Name</h2>
+                        <ul class="icon">
+                            <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href=""><i class="fab fa-instagram midicon"></i></a></li>
+                            <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                        </ul>
+
+                    </div>
+                    <div class="col-lg-3 col-sm-6 alumni-pic">
+                        <img src="images/rishab sir-1.png" alt="">
+                        <h2>Name</h2>
+
+                        <ul class="icon">
+                            <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href=""><i class="fab fa-instagram midicon"></i></a></li>
+                            <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 alumni-pic mdclass">
+                        <img src="images/gaurav-sir-1.png" alt="">
+                        <h2>Name</h2>
+
+                        <ul class="icon">
+                            <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href=""><i class="fab fa-instagram midicon"></i></a></li>
+                            <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 alumni-pic mdclass">
+                        <img src="images/rishab sir-1.png" alt="">
+                        <h2>Name</h2>
+                        <ul class="icon">
+                            <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href=""><i class="fab fa-instagram midicon"></i></a></li>
+                            <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container-fluid">
+            <div class="container" id="Footerid">
+                <div class="row row-13">
+                    <div class="col-md-3 footercol institute">
+                        <h2 class="text-white">Institute</h2>
+                        <p class="text-muted">RJIT-Rustamji Institute Of Technology.</p>
+                        <p class="text-muted">An Institute Of Border Security Force Takenpur,Gwalior-475005</p>
+                    </div>
+                    <div class="col-md-3 footercol">
+                        <h2 class="text-white">Email</h2>
+                        <p class="text-muted">collgeemail@gmail.com</p>
+                    </div>
+                    <div class="col-md-3 footercol">
+                        <h2 class="text-white">Phone No.</h2>
+                        <p class="text-muted">1234567891</p>
+                        <p class="text-muted">1234567891</p>
+                    </div>
+                    <div class="col-md-3 footercol">
+                        <h2 class="text-white">Follow Us</h2>
+                        <p class="text-muted">Let us be social</p>
+                        <ul class="footericons">
+                            <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                            <li><a href=""><i class="fab fa-youtube"></i></a></li>
+                            <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="container-fluid lastdiv">
+        <!-- <div class="container"> -->
+        <div class="row row-14">
+            <div class="col-md-6 contributors">
+                <p class="color">Developed By</p>
+                <p class="text-muted">Rishab Jain</p>
+                <p class="text-muted">Rishab Jain</p>
+
+            </div>
+            <div class="col-md-6 contributors">
+                <p class="color">Maintained By</p>
+                <p class="text-muted">Nayan Das</p>
+                <p class="text-muted">Nupur Sapra</p>
+            </div>
+        </div>
+        <!-- </div> -->
+    </div>
+
 </body>
+
 </html>
