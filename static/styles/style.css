@@ -17,6 +17,7 @@ html {
     background-size: cover;
     position: relative;
     opacity: 0.7;
+    padding: 0px;
 }
 
 .cover {
@@ -25,7 +26,8 @@ html {
     display: flex;
     align-items: center;
     color: white;
-    font-family: 'Raleway', sans-serif
+    font-family: 'Raleway', sans-serif;
+    margin: 0px;
 }
 
 .cover h1 {
@@ -166,15 +168,14 @@ html {
     margin: 0px;
 }
 
-.img-2,
-.img-3 {
+.photos {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.img-2 h2 {
+.photos h2 {
     font-size: 1.3rem;
     padding: 20px 0px;
     color: #372f81;
@@ -183,20 +184,11 @@ html {
     letter-spacing: 1.5px;
 }
 
-.img-2 img {
+.photos img {
     width: 60%;
 }
 
-.img-3 h2 {
-    font-size: 1.3rem;
-    padding: 20px 0px;
-    color: #372f81;
-    font-family: 'Raleway', sans-serif;
-    font-weight: bold;
-    letter-spacing: 1.5px;
-}
-
-.img-3 img {
+.img-2 img {
     width: 40%;
 }
 
@@ -446,16 +438,11 @@ footer h2 {
     .row-4 {
         margin: 50px 0px;
     }
-    .img-2 h2 {
-        font-size: 1rem;
-        padding: 20px 0px;
-        color: #372f81;
-        font-family: 'Raleway', sans-serif;
-        font-weight: bold;
-        letter-spacing: 1.5px;
+    .photos img {
+        width: 50%;
     }
-    .img-3 h2 {
-        font-size: 1rem;
+    .photos h2 {
+        font-size: 2rem;
         padding: 20px 0px;
         color: #372f81;
         font-family: 'Raleway', sans-serif;
@@ -480,7 +467,20 @@ footer h2 {
         font-size: 1.6rem;
     }
     .footercol {
-        padding-right: 10px;
+        /* border: green solid 2px; */
+        /* padding-right: 10px; */
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0px;
+    }
+    .footercol h2 {
+        font-size: 3rem;
+    }
+    .footercol p {
+        font-size: 2rem;
+        text-align: center;
     }
 }
 
@@ -539,25 +539,14 @@ footer h2 {
     .seniormember h1 {
         font-size: 2.5rem;
     }
-    .img-2 img {
-        width: 60%;
-    }
-    .img-3 img {
-        width: 60%;
+    .photos img {
+        width: 40%;
     }
     .eventdetail p {
         font-size: 1.5rem;
     }
     .when p {
         font-size: 1.3rem;
-    }
-    .footercol {
-        margin: 10px 0px;
-        display: flex;
-        flex-direction: column;
-        padding: 0px;
-        justify-content: center;
-        align-items: center;
     }
     .contributors p {
         font-size: 1rem;
@@ -571,12 +560,6 @@ footer h2 {
     .seniormember h1 {
         padding-top: 50px;
         font-size: 1.8rem;
-    }
-    .img-2 img {
-        width: 40%;
-    }
-    .img-3 img {
-        width: 40%;
     }
     .eventdetail h2 {
         font-size: 3rem;
@@ -613,7 +596,11 @@ footer h2 {
     .icon i {
         font-size: 0.7rem;
     }
-    .institute {
+    .footercol h2 {
+        font-size: 2rem;
+    }
+    .footercol p {
+        font-size: 1.5rem;
         text-align: center;
     }
 }
