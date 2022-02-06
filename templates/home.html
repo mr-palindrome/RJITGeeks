@@ -70,18 +70,20 @@
     <div class="container-fluid team-bg">
         <div class="container teamintro" id="Teamdetail">
             <h1 class="text-center text-white">Our Team</h1>
-            <div class="row row-3">
+            {% for member in members %}
+            {% if member.position_id == 3 %}
+            <div class="row row-3 my-3">
                 <div class="col-md-4 img-1">
-                    <img src="{% static 'media/gaurav- sir.png' %}" alt="">
+                    <img src="{{member.image.url}}" alt="">
                 </div>
                 <div class="col-md-8 img-1-text text-white">
-                    <h2>Jagdish Makhijani</h2>
-                    <h2>Faculty Member</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero quaerat perferendis explicabo,
-                        incidunt voluptatem accusamus et perspiciatis debitis nobis quis asperiores! Quod sint debitis
-                        nisi inventore totam harum, unde mollitia!</p>
+                    <h2>{{member.name}}</h2>
+                    <h2>{{member.position}}</h2>
+                    <p>{{member.about}}</p>
                 </div>
             </div>
+            {% endif %}
+            {% endfor %}
             {% for member in members %}
             {% if member.position_id == 1 %}
             <div class="row row-3 my-3">
@@ -121,10 +123,10 @@
             <h1 class="text-center">Senior Executive Member</h1>
             <div class="row row-6  row-cols-md-2 row-cols-lg-4 row-cols-1">
                 {% for member in members %}
-                {% if member.position_id == 5 %}
+                {% if member.position_id == 4 %}
                 <div class="col photos">
-                    <img src="{% static 'media/gaurav-sir-1.png' %}" alt="">
-                    <h2>Varad Khokle</h2>
+                    <img src="{{ member.image.url }}" alt="">
+                    <h2>{{ member.name }}</h2>
                 </div>
                 {% endif %}
                 {% endfor %}
@@ -189,12 +191,12 @@
             <h1 class="text-center">Meet Our Alumnus</h1>
             <div class="row row-12">
                 {% for member in members %}
-                {% if member.position_id == 5 %}
+                {% if member.position_id == 6 %}
                 <div class="col-lg-3 col-sm-6  alumni-pic">
-                    <img src="{% static 'media/gaurav-sir-1.png' %}" alt="">
-                    <h2>Name</h2>
+                    <img src="{{ member.image.url }}" alt="">
+                    <h2>{{ member.name }}</h2>
                     <ul class="icon">
-                        <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="{{member.linkedIn}}"><i class="fab fa-linkedin"></i></a></li>
                     </ul>
 
                 </div>
