@@ -9,3 +9,7 @@ def home(request):
     data = Members.objects.all()
     print(data)
     return render(request, 'home.html',{'members':data})
+
+
+def event(request, id):
+    return HttpResponse("hello world")

@@ -11,5 +11,6 @@ urlpatterns = [
     # UUID: universally unique identifier like username
 
     path('', views.home),
+    path('event/<int:id>', views.event)
 ]
 
