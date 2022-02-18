@@ -1,1 +1,1 @@
-web: gunicorn demo.wsgi --log-file -
+web: gunicorn RJITGeeks.wsgi --log-file -
