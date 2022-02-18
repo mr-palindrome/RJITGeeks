@@ -237,7 +237,13 @@ html {
     font-size: 1.8rem;
     text-align: center;
 }
-
+.h2-link{
+    text-decoration: none;
+    color: rgb(161, 161, 161);
+}
+.h2-link:hover{
+    color: white;
+}
 .row-11 {
     margin: 0px;
     padding: 0px;

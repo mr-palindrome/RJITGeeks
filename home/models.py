@@ -15,7 +15,7 @@ class Members(models.Model):
     email = models.EmailField(max_length=254)
     mobile= models.CharField(max_length=15)
     about = models.TextField(default=None)
-    linkedIn = models.URLField(max_length=200)
+    url = models.URLField(max_length=200)
     position= models.ForeignKey(Position,on_delete=models.CASCADE)
 
     def __str__(self):

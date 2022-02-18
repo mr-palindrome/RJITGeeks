@@ -47,25 +47,19 @@
 
         </div>
         <div class="col-md-6 about-content" id="Geeksdetail">
-            <h2 class="text-center">About-Geeks</h2>
+            <h2 class="text-center">About-Us</h2>
 
 
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla quo accusamus deserunt repellat
-                architecto perspiciatis quas laborum voluptatum hic cupiditate fuga eaque aperiam voluptatem fugit,
-                laboriosam, explicabo vero laudantium.
-                Quas.
+            <p>RJIT Geeks, a Codechef Campus Chapter, has been established to create a coding environment and awareness in the campus, to help the students gain insight into the technical world necessary for their careers. 
             </p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla quo accusamus deserunt repellat
-                architecto perspiciatis quas laborum voluptatum hic cupiditate fuga eaque aperiam voluptatem fugit,
-                laboriosam, explicabo vero laudantium.
-                Quas.
+            <p>We organize different events, sessions, workshops, hackathons, classes many more to encourage the students and help them as their backbone.
             </p>
 
 
         </div>
     </div>
 </section>
-<!------------------ our team section --------->
+{% comment %} <!------------------ our team section ---------> {% endcomment %}
 <section class="section-2">
     <div class="container-fluid team-bg">
         <div class="container teamintro" id="Teamdetail">
@@ -77,7 +71,7 @@
                     <img src="{{member.image.url}}" alt="">
                 </div>
                 <div class="col-md-8 img-1-text text-white">
-                    <h2>{{member.name}}</h2>
+                    <h2><a href="{{member.url}}" class='h2-link' target="_blank" rel="noopener noreferrer">{{member.name}}</a></h2>
                     <h2>{{member.position}}</h2>
                     <p>{{member.about}}</p>
                 </div>
@@ -91,7 +85,7 @@
                     <img src="{{member.image.url}}" alt="">
                 </div>
                 <div class="col-md-8 img-1-text text-white">
-                    <h2>{{member.name}}</h2>
+                    <h2><a href="{{member.url}}" class='h2-link' target="_blank" rel="noopener noreferrer">{{member.name}}</a></h2>
                     <h2>{{member.position}}</h2>
                     <p>{{member.about}}</p>
                 </div>
@@ -105,7 +99,7 @@
                     <img src="{{member.image.url}}" alt="">
                 </div>
                 <div class="col-md-8 img-1-text text-white">
-                    <h2>{{member.name}}</h2>
+                    <h2><a href="{{member.url}}" class='h2-link' target="_blank" rel="noopener noreferrer">{{member.name}}</a></h2>
                     <h2>{{member.position}}</h2>
                     <p>{{member.about}}</p>
                 </div>
@@ -119,19 +113,19 @@
 <section class="section-3">
     <div class="container-fluid seniorbg">
         <div class="container seniormember">
-            <!------------------ senior executive member section --------->
+            {% comment %} <!------------------ senior executive member section ---------> {% endcomment %}
             <h1 class="text-center">Senior Executive Member</h1>
             <div class="row row-6  row-cols-md-2 row-cols-lg-4 row-cols-1">
                 {% for member in members %}
                 {% if member.position_id == 4 %}
                 <div class="col photos">
                     <img src="{{ member.image.url }}" alt="">
-                    <h2>{{ member.name }}</h2>
+                    <h2><a href="{{member.url}}" class='h2-link' target="_blank" rel="noopener noreferrer">{{member.name}}</a></h2>
                 </div>
                 {% endif %}
                 {% endfor %}
             </div>
-            <!------------------ junior executive member section --------->
+            {% comment %} <!------------------ junior executive member section ---------> {% endcomment %}
             <h1 class="text-center">Junior Executive Member</h1>
             <div class="row row-8 row-cols-lg-3 row-cols-md-2 row-cols-1">
 
@@ -140,7 +134,7 @@
 
                 <div class="col  photos img-2">
                     <img src="{{ member.image.url }}" alt="">
-                    <h2>{{ member.name }}</h2>
+                    <h2><a href="{{member.url}}" class='h2-link' target="_blank" rel="noopener noreferrer">{{member.name}}</a></h2>
                 </div>
                 {% endif %}
                 {% endfor %}
@@ -149,7 +143,7 @@
         </div>
     </div>
 </section>
-<!------------------ event section --------->
+{% comment %} <!------------------ event section ---------> {% endcomment %}
 <section class="section-4">
     <div class="container-fluid eventbg text-white">
         <div class="eventcover">
@@ -184,7 +178,7 @@
 
     </div>
 </section>
-<!------------------ alumus section --------->
+{% comment %} <!------------------ alumus section ---------> {% endcomment %}
 <section class="section-5">
     <div class="container-fluid alumnifluid">
         <div class="container alumni-container" id="Alumniid">
@@ -194,11 +188,7 @@
                 {% if member.position_id == 6 %}
                 <div class="col-lg-3 col-sm-6  alumni-pic">
                     <img src="{{ member.image.url }}" alt="">
-                    <h2>{{ member.name }}</h2>
-                    <ul class="icon">
-                        <li><a href="{{member.linkedIn}}"><i class="fab fa-linkedin"></i></a></li>
-                    </ul>
-
+                    <h2><a href="{{member.url}}" class='h2-link' target="_blank" rel="noopener noreferrer">{{member.name}}</a></h2>
                 </div>
                 {% endif %}
                 {% endfor %}
