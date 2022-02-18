@@ -23,12 +23,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 # SECRET_KEY = config("SECRET_KEY")
-SECRET_KEY = 'django-insecure-_33703#*@%8arj#h$(u3eb&@q%mz$542oyrsb%lxctavd43@sm'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1','localhost','rjitgeeks.herokuapp.com']
+# ALLOWED_HOSTS = ['127.0.0.1','localhost','rjitgeeks.herokuapp.com']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -40,7 +40,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'corsheaders',
     'home.apps.HomeConfig',
 ]
 
@@ -82,10 +81,10 @@ WSGI_APPLICATION = 'RJITGeeks.wsgi.application'
 DATABASES = {
         'default': {
             'ENGINE': 'djongo',
-            'NAME': 'RJITGeeksData', #config('DATABASE'),
+            'NAME': config('DATABASE'),
             'ENFORCE_SCHEMA': False,
             'CLIENT': {
-                'host': 'mongodb+srv://RJITGeeks:RJITGeeks123geeks@rjitgeeks.4jxdh.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', #config('HOST')
+                'host': config('HOST')
             }
         }
 }
