@@ -11,7 +11,7 @@ class Position(models.Model):
 
 class Members(models.Model):
     name = models.CharField(max_length=100)
-    image = models.ImageField()
+    image = models.URLField(max_length=300)
     email = models.EmailField(max_length=254)
     mobile= models.CharField(max_length=15)
     about = models.TextField(default=None)
