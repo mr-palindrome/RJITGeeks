@@ -1,7 +1,7 @@
 asgiref==3.5.0
 Django
 djongo==1.3.6
-dnspython==2.2.0
+dnspython==2.6.0rc1
 gunicorn==20.1.0
 Pillow==9.0.1
 pymongo==3.12.1
